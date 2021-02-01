@@ -492,7 +492,7 @@ a:active {
 
 @media (min-width: 768px) {
     .skills__wrapper {
-        width: 2%;
+        width: 35%;
     }
 
     .skills__wrapper .button {
