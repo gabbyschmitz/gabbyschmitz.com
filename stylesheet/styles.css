@@ -541,33 +541,28 @@ a:active {
     }
     
     .skills__animation-item:nth-child(1) {
-        /* display: none; */
         top: 0;
         left: 200px;
     }
     
     .skills__animation-item:nth-child(2) {
-        /* display: none; */
         left: -100px;
         bottom: -300px;
     }
     
     .skills__animation-item:nth-child(3) {
-        /* display: none; */
         right: 0;
         top: 25%;
     }
     
     .skills__animation-item:nth-child(4) {
-        /* display: none; */
         left: 200px;
         bottom: -400px;
     }
     
     .skills__animation-item:nth-child(5) {
-        /* display: none; */
-        right: -100px;
-        bottom: -300px;
+        right: 0px;
+        bottom: -365px;
     }
     
 }
