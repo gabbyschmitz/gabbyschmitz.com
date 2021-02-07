@@ -35,6 +35,10 @@
     font-size: var(--font-base-size);
 }
 
+html {
+    scroll-behavior: smooth;
+} 
+
 *,
 *:before,
 *:after {
@@ -186,6 +190,10 @@ a:active {
 .header__home {
     font-size: 1.25rem;
     width: 50%;
+}
+
+.header__home a {
+    font-weight: normal;
 }
 
 .header__menu {
@@ -734,7 +742,6 @@ a:active {
 .contact__trademark {
     width: 100%;
     text-align: center;
-    margin-bottom: 15px;
 }
 
 @media (min-width: 768px) {
@@ -770,6 +777,7 @@ a:active {
 .contact__trademark {
     text-align: center;
     font-size: 12px;
+    opacity: .5;
 }
 
 @media (min-width: 768px) {
@@ -816,6 +824,7 @@ a:active {
     .introduction__text {
         width: 50%;
         align-items: flex-start;
+        margin-bottom: 15.9375rem;
     }    
 }
 
@@ -845,6 +854,7 @@ a:active {
     width: 200px;
     height: 70px;
     background-size: 200px;
+    animation: floating-cloud 3s ease-in-out infinite;
 }
 
 @media (min-width: 768px) {
@@ -872,7 +882,6 @@ a:active {
 
 @media (min-width: 768px) {
     .introduction__title {
-        margin-bottom: 4.375rem;
         text-align: left;
     }
 }
@@ -894,15 +903,14 @@ a:active {
 
 .about {
     position: relative;
-    min-height: 700px;
+    max-height: 1530px;
     background: var(--yellow);
     background-image: url(../assets/svgs/bglines.svg);
-    background-size: 375px 640px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    background-position: center 49%;
+    background-position: center 100%;
 }
 
 .about__wrapper {
@@ -914,6 +922,7 @@ a:active {
     .about__wrapper {
         display: flex;
         flex-direction: row;
+        margin-bottom: 6.4375rem;
     }
 }
 
@@ -999,7 +1008,7 @@ a:active {
 .about__call-out {
     text-align: center;
     line-height: 1.5;
-    font-weight: 100;
+    font-weight: lighter;
     margin-bottom: 7.5rem;
     padding: .9375rem;
 }
@@ -1011,7 +1020,7 @@ a:active {
         margin-bottom: 5.625rem;
         font-size: 2.25rem;
         line-height: 1.5;
-        font-weight: 100;
+        font-weight: lighter;
     }         
 }
 
@@ -1025,7 +1034,7 @@ a:active {
 
 @media (min-width: 768px) {
     .about__keywords {
-        margin-bottom: 5.75rem;
+        margin-bottom: 0;
     }         
 }
 
@@ -1060,7 +1069,6 @@ a:active {
     width: initial;
     position: relative;
     bottom: -100px;
-    padding: .9375rem;
 }
 
 @media (min-width: 768px) {
@@ -1093,6 +1101,20 @@ a:active {
 
     100% {
         transform: translate(-50%, -20px);
+    }
+}
+
+@keyframes floating-cloud {
+    0% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-20px);
     }
 } 
 
