@@ -88,7 +88,7 @@ a:active {
     text-align: center;
     font-size: 2rem;
     font-weight: normal;
-    margin-bottom: 2.8125rem;
+    margin-bottom: 2.5rem;
 }
 
 @media (min-width: 768px) { 
@@ -104,7 +104,7 @@ a:active {
     font-family: var(--text-font-family);
     font-size: .875rem;
     font-weight: lighter;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.5rem;
     line-height: 1.5;
 }
 
@@ -167,7 +167,7 @@ a:active {
 /** header definitions **/
 
 .header {
-    padding: 2.375rem 5rem 0 5rem;
+    padding: 0.9375rem 1.6375rem 3.75rem 1.6375rem;
     font-family: 'p22-mackinac-pro', serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -273,6 +273,10 @@ a:active {
     height: 3px;
     margin-bottom: 3px;
     background-color: var(--dark-gray);
+}
+
+.menu-content__list {
+    font-family: 'Ilisarniq', sans-serif;
 }
 
 .menu-content__list-item {
@@ -482,7 +486,13 @@ a:active {
     display: flex;
     font-family: 'p22-mackinac-pro', serif;
     overflow: hidden;
-    padding-top: 5rem;
+    padding-top: 4.375rem;
+}
+
+@media (min-width: 768px) {
+    .work {
+        padding-top: 5rem;
+    }
 }
 
 .work__wrapper {
@@ -570,7 +580,13 @@ a:active {
 .skills {
     /* padding: 38px 38px 0 38px; */
     background-color: var(--white);
-    min-height: 744px;
+    padding-top: 4.375rem;
+}
+
+@media (min-width: 768px) {
+    .skills {
+        padding-top: 4.375rem;
+    }
 }
 
 .skills__container {
@@ -754,8 +770,8 @@ a:active {
 }
 
 .contact__email {
-    margin-bottom: 20px;
-    padding-left: 80px;
+    margin-bottom: 2.5rem;
+    padding-left: 5rem;
     position: relative;
 }
 
@@ -838,6 +854,10 @@ a:active {
 .contact__trademark {
     width: 100%;
     text-align: center;
+}
+
+.contact__social-links {
+    margin-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -1011,7 +1031,15 @@ a:active {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    background-position: center 100%;
+    background-position: 50% 57%;
+    background-size: contain;
+}
+
+@media (min-width: 768px) {
+    .about {
+        background-size: auto;
+        background-position: center 100%;
+    }
 }
 
 .about__wrapper {
