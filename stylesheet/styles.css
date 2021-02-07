@@ -84,7 +84,7 @@ a:active {
     text-align: center;
     font-size: 2rem;
     font-weight: normal;
-    margin-bottom: .9375rem;
+    margin-bottom: 2.8125rem;
 }
 
 @media (min-width: 768px) { 
@@ -92,13 +92,14 @@ a:active {
         text-align: left;
         font-size: var(--subtitle-font-size);
         font-weight: normal;
-        margin-bottom: var(--spacing);
+        margin-bottom: 1.875rem;
     }
 }
 
 .paragraph {
     font-family: var(--text-font-family);
     font-size: .875rem;
+    font-weight: lighter;
     margin-bottom: 1.25rem;
     line-height: 1.5;
 }
@@ -106,15 +107,15 @@ a:active {
 @media (min-width: 768px) { 
     .paragraph {
         font-size: var(--text-font-size);
-        margin-bottom: var(--spacing);
+        margin-bottom: 1.875rem;
     }    
 }
 
 .button {
     display: inline-block;
-    padding: .9375rem 2.25rem;
+    padding: 1.15625rem 2.25rem;
     border-radius: 48px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-family: 'Ilisarniq', sans-serif;
 }
 
@@ -135,6 +136,8 @@ a:active {
     border: 1px solid var(--floral-white);
     color: var(--floral-white);
     transition: background .2s ease-in;
+    padding: .625rem 2.25rem;
+    font-size: 1rem;
 }
 
 .button--reverse:hover,
@@ -157,18 +160,10 @@ a:active {
     }
 }
 
-/* @media (min-width: 992px) {
-    .wrapper {
-        width: 992px;
-        margin: 0 auto;
-    }
-} */
-
-
 /** header definitions **/
 
 .header {
-    padding: 38px 38px 0 38px;
+    padding: 2.375rem 5rem 0 5rem;
     font-family: 'p22-mackinac-pro', serif;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
@@ -179,7 +174,7 @@ a:active {
 
 @media (min-width: 768px) {
     .header {
-        padding: 38px 38px 0 38px;
+        padding: 2.375rem 5rem 0 5rem;
         margin-bottom: 97px;
         font-family: 'p22-mackinac-pro', serif;
         font-weight: 400;
@@ -189,13 +184,14 @@ a:active {
 }
 
 .header__home {
-    font-size: 20px;
+    font-size: 1.25rem;
     width: 50%;
 }
 
 .header__menu {
     font-family: 'Ilisarniq', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: lighter;
     text-transform: uppercase;
     width: 50%;
     text-align: right;
@@ -324,12 +320,13 @@ a:active {
 .hero__cat-baloon-img {
     position: absolute;
     bottom: 0;
-    width: 120px;
-    height: 200px;
+    width: auto;
+    height: 260px;
     z-index: 100;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
     bottom: -30px;
+    animation: floating-balloon 2s infinite;
 }
 
 .hero__expertise {
@@ -358,6 +355,7 @@ a:active {
 .hero__expertise-item {
     font-size: .875rem;
     margin-bottom: .9375rem;
+    font-weight: lighter;
 }
 
 @media (min-width: 768px) {
@@ -380,7 +378,7 @@ a:active {
     display: flex;
     font-family: 'p22-mackinac-pro', serif;
     overflow: hidden;
-    padding-top: 50px;
+    padding-top: 5rem;
 }
 
 .work__wrapper {
@@ -478,6 +476,7 @@ a:active {
 
 @media (min-width: 768px) {
     .skills__container {
+        padding-top: 5rem;
         flex-direction: row;
     }
 }
@@ -496,7 +495,7 @@ a:active {
     }
 
     .skills__wrapper .button {
-        display: initial;
+        display: inline-block;
     }
 }
 
@@ -532,6 +531,7 @@ a:active {
     .skills__animations {
         width: 65%;
         display: initial;
+        right: -100px;
     }
     
     .skills__animation-item {
@@ -628,7 +628,7 @@ a:active {
 
 @media (min-width: 768px) {
     .contact {
-        padding: 16.25rem 2.25rem 1.625rem 2.25rem;
+        padding: 12.5rem 2.25rem 1.625rem 2.25rem;
     }    
 }
 
@@ -719,7 +719,7 @@ a:active {
 .contact__social {
     display: flex;
     flex-direction: column;
-    margin-bottom: 7.5rem;
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
@@ -1082,4 +1082,17 @@ a:active {
     padding: 100px 190px 100px 190px;
 }
 
+@keyframes floating-balloon {
+    0% {
+        transform: translate(-50%, -20px);
+    }
+
+    50% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -20px);
+    }
+} 
 
