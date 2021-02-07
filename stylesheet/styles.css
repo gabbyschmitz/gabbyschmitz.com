@@ -126,7 +126,7 @@ a:active {
 .button--initial {
     border: 1px solid var(--dark-gray);
     color: var(--dark-gray);
-    transition: background .2s ease-in;
+    transition: background .1s ease-in;
 }
 
 .button--initial:hover,
@@ -203,6 +203,102 @@ a:active {
     text-transform: uppercase;
     width: 50%;
     text-align: right;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+@media (max-width: 500px) {
+    .menu-mobile {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .header__menu {
+        display: none;
+    }
+}
+
+.menu-content {
+    padding: 30px;
+    position: fixed;
+    box-shadow: 2px 2px 3px 2px #ccc;
+    right: 0;
+    transform: translateX(200px);
+    background: var(--floral-white);
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+    width: 200px;
+    transition: transform .3s ease-in;
+}
+
+.menu-content--visible {
+    transform: translateX(0);
+}
+
+.menu-content__button-container {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.menu-content__close-button::before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 18px;
+    height: 2px;
+    transform: rotate(50deg);
+    background: var(--dark-gray);
+}
+
+.menu-content__close-button::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: "";
+    width: 18px;
+    height: 2px;
+    transform: rotate(-50deg);
+    background: var(--dark-gray);
+}
+
+.menu-mobile__button-item {
+    width: 20px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: var(--dark-gray);
+}
+
+.menu-content__list-item {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    position: relative;
+    padding-left: 15px;
+}
+
+.menu-content__list-item .menu-content__list-item-link:hover,
+.menu-content__list-item .menu-content__list-item-link:active {
+    color: var(--soft-red);
+    text-decoration: none;
+}
+
+.menu-content__list-item:before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: var(--soft-red);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .header__menu-item {
@@ -765,6 +861,11 @@ a:active {
 .contact__social-links-item {
     margin-right: 25px;
     font-size: .875rem;
+}
+
+.contact__social-links-item:hover,
+.contact__social-links-item:active {
+    color: var(--soft-red);
 }
 
 @media (min-width: 768px) {

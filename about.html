@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/jzl3csv.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
     <link rel="stylesheet" href="stylesheet/styles.css">
     <title>Gabriela Schmitz</title>
 </head>
@@ -12,16 +13,37 @@
         <h1 class="header__home"><a href="index.html">gabriela schmitz</a></h1>
         <ul class="header__menu">
             <li class="header__menu-item"><a class="header__link" href="about.html">about</a></li>
-            <li class="header__menu-item"><a class="header__link" href="#">cv</a></li>
+            <li class="header__menu-item"><a class="header__link" target="_blank" href="https://read.cv/gschmitz">cv</a></li>
             <li class="header__menu-item"><a id="contact-button" class="header__link" href="#">contact</a></li>  
         </ul>
+
+        <div class="menu-mobile">
+            <ul class="menu-mobile__button">
+                <a href="#">
+                    <li class="menu-mobile__button-item"></li>
+                    <li class="menu-mobile__button-item"></li>
+                    <li class="menu-mobile__button-item"></li>
+                </a>
+            </ul>
+
+            <div class="menu-content">
+                <div class="menu-content__button-container">
+                    <a href="#" class="menu-content__close-button"></a>
+                </div>
+                <ul class="menu-content__list">
+                    <li class="menu-content__list-item"><a class="menu-content__list-item-link" href="about.html">about</a></li>
+                    <li class="menu-content__list-item"><a class="menu-content__list-item-link" target="_blank" href="https://read.cv/gschmitz">cv</a></li>
+                    <li class="menu-content__list-item"><a id="contact-button" class="menu-content__list-item-link" href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <section class="introduction">
         <div class="wrapper introduction__wrapper">
             <div class="introduction__text">
                 <h2 class="title title--2 introduction__title">Hey there,</h2>     
                 <p class="paragraph introduction__description">From a small paradisiac fisherman island in Brazil to the vibrant underground Berlin. I come from an animation background and now work full time as Product and Lead Designer at LottieFiles.</p>
-                <a class="button button--initial" href="#">Contact me</a>
+                <a class="button button--initial" id="contact-me" href="#">Contact me</a>
             </div>
             <div class="introduction__image-container">
                 <div class="introduction__image-wrapper">
@@ -62,14 +84,14 @@
     <footer class="contact">
         <div class="wrapper about__additional-top-padding">
             <p class="contact__label">Want to talk about <span>cats</span>?</p>
-            <p class="contact__label contact__email">hey@gabbyschmitz.com</p>
+            <p class="contact__label contact__email"><a href="mailto:hey@gabbyschmitz.com">hey@gabbyschmitz.com</a></p>
 
             <div class="contact__social">
                 <div class="contact__social-links">
-                    <a class="contact__social-links-item" href="#">Dribble</a>
-                    <a class="contact__social-links-item" href="#">Twitter</a>
-                    <a class="contact__social-links-item" href="#">Linkedin</a>
-                    <a class="contact__social-links-item" href="#">Medium</a>
+                    <a class="contact__social-links-item" target="_blank" href="#">Dribble</a>
+                    <a class="contact__social-links-item" target="_blank" href="#">Twitter</a>
+                    <a class="contact__social-links-item" target="_blank" href="#">Linkedin</a>
+                    <a class="contact__social-links-item" target="_blank" href="#">Medium</a>
                 </div>
                 <div class="contact__trademark">
                     © (2021) Made with ♡ in Berlin

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/jzl3csv.css">
     <link rel="stylesheet" href="stylesheet/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Gabriela Schmitz</title>
 </head>
@@ -13,14 +14,35 @@
         <h1 class="header__home"><a href="index.html">gabriela schmitz</a></h1>
         <ul class="header__menu">
             <li class="header__menu-item"><a class="header__link" href="about.html">about</a></li>
-            <li class="header__menu-item"><a class="header__link" href="https://read.cv/gschmitz">cv</a></li>
+            <li class="header__menu-item"><a class="header__link" target="_blank" href="https://read.cv/gschmitz">cv</a></li>
             <li class="header__menu-item"><a id="contact-button" class="header__link" href="#">contact</a></li>  
         </ul>
+
+        <div class="menu-mobile">
+            <ul class="menu-mobile__button">
+                <a href="#">
+                    <li class="menu-mobile__button-item"></li>
+                    <li class="menu-mobile__button-item"></li>
+                    <li class="menu-mobile__button-item"></li>
+                </a>
+            </ul>
+
+            <div class="menu-content">
+                <div class="menu-content__button-container">
+                    <a href="#" class="menu-content__close-button"></a>
+                </div>
+                <ul class="menu-content__list">
+                    <li class="menu-content__list-item"><a class="menu-content__list-item-link" href="about.html">about</a></li>
+                    <li class="menu-content__list-item"><a class="menu-content__list-item-link" target="_blank" href="https://read.cv/gschmitz">cv</a></li>
+                    <li class="menu-content__list-item"><a id="contact-button" class="menu-content__list-item-link" href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <section class="hero">
         <div class="wrapper">
             <h2 class="title title--2 hero__title">Gabby is a <span class="hero__word-arrow">designer</span>,<br><span class="hero__word-underline">creative</span> and thinker<span class="hero__point">.</span></h2>
-            <a href="#" class="button button--initial">Read about me</a>
+            <a class="button button--initial" href="about.html">Read about me</a>
             <ul class="hero__expertise">
                 <li class="hero__expertise-item hero__expertise-item--first">what i do</li>
                 <li class="hero__expertise-item">Product Design</li>
@@ -39,7 +61,7 @@
             <div class="work__info">
                 <h3 class="title title--3">LottieFiles</h3>
                 <p class="paragraph work__paragraph">I work as a product and lead designer at LottieFiles, the hub to provide everything for lottie animations. I’m currently designing a new tool that is yet to come and our design system.</p>
-                <a href="https://lottiefiles.com/" class="button button--initial">Meet Lottiefiles</a>
+                <a href="https://lottiefiles.com/" target="_blank" class="button button--initial">Meet Lottiefiles</a>
             </div>
         </div>
     </section>
@@ -48,7 +70,7 @@
                 <div class="skills__wrapper">
                     <h3 class="title title--3">Animations</h3>
                     <p class="paragraph skills__paragraph">A little taste of some of my<br>animations and illustrations :)</p>
-                    <a href="https://www.dribbble.com/gabeschmitz" class="button button--initial">More please</a>
+                    <a href="https://www.dribbble.com/gabeschmitz" target="_blank" class="button button--initial">More please</a>
                 </div>
                 <div class="skills__animations">
                     <lottie-player class="skills__animation-item" src="https://assets9.lottiefiles.com/packages/lf20_9JQ5Lt.json"  background="transparent" speed="1" loop autoplay></lottie-player>
@@ -66,11 +88,11 @@
                 <ul class="conferences__list">
                     <li class="conferences__list-item">
                         <span class="conferences__name">UXVN 2020</span>
-                        <a href="https://www.youtube.com/watch?v=VSzIhTCjkuE&feature=youtu.be" class="button button--reverse">Watch</a>
+                        <a href="https://www.youtube.com/watch?v=VSzIhTCjkuE&feature=youtu.be" target="_blank" class="button button--reverse">Watch</a>
                     </li>
                     <li class="conferences__list-item">
                         <span class="conferences__name">Friends of Figma KL Meetup 2020</span>
-                        <a href="https://www.youtube.com/watch?v=pO7Sh0VCJ-o&t" class="button button--reverse">Watch</a>
+                        <a href="https://www.youtube.com/watch?v=pO7Sh0VCJ-o&t" target="_blank" class="button button--reverse">Watch</a>
                     </li>
                 </ul>
             </div>
@@ -78,14 +100,14 @@
         <footer class="contact">
             <div class="wrapper">
                 <p class="contact__label">Want to talk about <span>cats</span>?</p>
-                <p class="contact__label contact__email">hey@gabbyschmitz.com</p>
+                <p class="contact__label contact__email"><a href="mailto:hey@gabbyschmitz.com">hey@gabbyschmitz.com</a></p>
     
                 <div class="contact__social">
                     <div class="contact__social-links">
-                        <a class="contact__social-links-item" href="https://www.dribbble.com/gabeschmitz">Dribble</a>
-                        <a class="contact__social-links-item" href="https://www.twitter.com/gabby_schmitz">Twitter</a>
-                        <a class="contact__social-links-item" href="https://www.linkedin.com/in/gabriela-schmitz/">Linkedin</a>
-                        <a class="contact__social-links-item" href="https://gabbyschmitz.medium.com/">Medium</a>
+                        <a class="contact__social-links-item" target="_blank" href="https://www.dribbble.com/gabeschmitz">Dribble</a>
+                        <a class="contact__social-links-item" target="_blank" href="https://www.twitter.com/gabby_schmitz">Twitter</a>
+                        <a class="contact__social-links-item" target="_blank" href="https://www.linkedin.com/in/gabriela-schmitz/">Linkedin</a>
+                        <a class="contact__social-links-item" target="_blank" href="https://gabbyschmitz.medium.com/">Medium</a>
                     </div>
                     <div class="contact__trademark">
                         © (2021) Made with ♡ in Berlin
