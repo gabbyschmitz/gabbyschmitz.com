@@ -3,7 +3,8 @@
     const contact = doc.querySelector('.contact');
 
     contactBtn.addEventListener('click', function(e) {
-        win.scroll({ top: contact.offsetTop, left: 0, behavior: 'smooth' });
+        win.scrollTo({ top: contact.offsetTop, left: 0, behavior: 'smooth' });
+        e.preventDefault();
     });
 
 })(window, document);
