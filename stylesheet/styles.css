@@ -585,7 +585,8 @@ a:active {
 
 @media (min-width: 768px) {
     .skills {
-        padding-top: 4.375rem;
+        padding-top: 0;
+        min-height: 750px;
     }
 }
 
