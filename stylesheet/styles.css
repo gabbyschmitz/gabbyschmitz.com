@@ -320,13 +320,18 @@ a:active {
     color: var(--soft-red);
 }
 
-.header__link:hover:before {
+.header__link:before {
     content: "";
-    position: absolute;
-    bottom: -7px;
-    width: 100%;
+    transition: width .1s ease-in-out;
     height: 3px;
     background: var(--soft-red);
+    position: absolute;
+    bottom: -7px;
+    width: 0%;
+}
+
+.header__link:hover:before {
+    width: 100%;
 }
 
 .header__menu-item:last-of-type {
@@ -769,6 +774,21 @@ a:active {
         line-height: initial;
     }    
 }
+
+.contact__word {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 .contact__email {
     margin-bottom: 2.5rem;

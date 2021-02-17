@@ -1,17 +1,24 @@
 ((win, doc) => {
-    const contactBtn = doc.querySelector('#contact-button');
-    const contactMeBtn = doc.querySelector('#contact-me');
+    const contactBtn = doc.getElementById('contact-button');
+    const contactMobileBtn = doc.getElementById('contact-button-mobile');
     const contact = doc.querySelector('.contact');
     const menuButtonMobile = doc.querySelector('.menu-mobile__button');
     const menuMobile = doc.querySelector('.menu-content');
     const closeMenuBtn = doc.querySelector('.menu-content__close-button');
 
-    const scrollToContact = function(e) {
+    new Typewriter('#typewriter', {
+        strings: ['cats', 'design', 'animation', 'food'],
+        loop: true,
+        autoStart: true,
+        delay: 75,
+    });
+   
+    function scrollToContact(e) {
         win.scrollTo({ top: contact.offsetTop, left: 0, behavior: 'smooth' });
         e.preventDefault();
     }
 
-    const openMobileMenu = function(e) {
+    function openMobileMenu(e) {
         if (!menuMobile.classList.contains('menu-content--visible')) {
             menuMobile.classList
                 .add('menu-content--visible');
@@ -20,15 +27,15 @@
         e.preventDefault();
     }
 
-    const closeMobileMenu = function(e) {
+    function closeMobileMenu(e) {
         menuMobile.classList
                 .remove('menu-content--visible');
         e.preventDefault();
     }
 
-    contactBtn.addEventListener('click', scrollTo);
+    contactBtn.addEventListener('click', scrollToContact);
     menuButtonMobile.addEventListener('click', openMobileMenu);
     closeMenuBtn.addEventListener('click', closeMobileMenu)
-    contactMeBtn && contactMeBtn.addEventListener('click', scrollToContact)
+    contactMobileBtn.addEventListener('click', scrollToContact)
 
 })(window, document);

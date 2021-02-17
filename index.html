@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__home"><a href="index.html">gabriela schmitz</a></h1>
+        <h1 class="header__home"><a href="/">gabriela schmitz</a></h1>
         <ul class="header__menu">
             <li class="header__menu-item"><a class="header__link" href="about.html">about</a></li>
             <li class="header__menu-item"><a class="header__link" target="_blank" href="https://read.cv/gschmitz">cv</a></li>
@@ -34,7 +34,7 @@
                 <ul class="menu-content__list">
                     <li class="menu-content__list-item"><a class="menu-content__list-item-link" href="about.html">about</a></li>
                     <li class="menu-content__list-item"><a class="menu-content__list-item-link" target="_blank" href="https://read.cv/gschmitz">cv</a></li>
-                    <li class="menu-content__list-item"><a id="contact-button" class="menu-content__list-item-link" href="#">contact</a></li>
+                    <li class="menu-content__list-item"><a id="contact-button-mobile" class="menu-content__list-item-link" href="#">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -99,7 +99,7 @@
         </section>
         <footer class="contact">
             <div class="wrapper">
-                <p class="contact__label">Want to talk about <span>cats</span>?</p>
+                <p class="contact__label">Want to talk about <span id="typewriter" class="contact__word">cats</span>?</p>
                 <p class="contact__label contact__email"><a href="mailto:hey@gabbyschmitz.com">hey@gabbyschmitz.com</a></p>
     
                 <div class="contact__social">
@@ -115,6 +115,7 @@
                 </div>
             </div>
         </footer>
+        <script src="js/vendors/typewriterjs.min.js"></script>
         <script src="js/site.js"></script>
 </body>
 </html>
