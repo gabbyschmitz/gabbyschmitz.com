@@ -1,6 +1,7 @@
 ((win, doc) => {
     const contactBtn = doc.getElementById('contact-button');
     const contactMobileBtn = doc.getElementById('contact-button-mobile');
+    const contactMeBtn = doc.getElementById('contact-me');
     const contact = doc.querySelector('.contact');
     const menuButtonMobile = doc.querySelector('.menu-mobile__button');
     const menuMobile = doc.querySelector('.menu-content');
@@ -34,6 +35,7 @@
     }
 
     contactBtn.addEventListener('click', scrollToContact);
+    contactMeBtn.addEventListener('click', scrollToContact)
     menuButtonMobile.addEventListener('click', openMobileMenu);
     closeMenuBtn.addEventListener('click', closeMobileMenu)
     contactMobileBtn.addEventListener('click', scrollToContact)
